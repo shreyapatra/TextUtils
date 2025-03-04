@@ -62,15 +62,15 @@ function App() {
       <div className="container my-5 py-3">
 
         <Routes>
-          <Route path="/" element={
+          <Route path="/textUtils" element={
             <TextForm
               showAlert={showAlert}
               heading="Enter the text to analyze below"
               mode={mode}
             />
           } />
-          <Route path="/about" element={<About mode={mode} />} />   
-          <Route path="*" element={<Navigate to="/" />} />
+          <Route exact path="/about" element={<About mode={mode} />} />   
+          {/* <Route exact path="*" element={<Navigate to="/" />} /> */}
         </Routes>
 
       </div>

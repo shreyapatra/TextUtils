@@ -7,7 +7,7 @@ export default function Navbar(props) {
   return (
     <nav className={`navbar navbar-expand-lg ${props.mode === 'dark' ? 'navbar-dark bg-dark' : 'navbar-light bg-light'} fixed-top`}>
       <div className="container-fluid">
-        <Link className="navbar-brand" to="/">{props.title}</Link>
+        <Link className="navbar-brand" to="/textUtils">{props.title}</Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -22,7 +22,7 @@ export default function Navbar(props) {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" to="/">Home</Link>
+              <Link className="nav-link active" aria-current="page" to="/textUtils">Home</Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/about">{props.aboutText}</Link>
