@@ -62,6 +62,7 @@ function App() {
       <div className="container my-5 py-3">
 
         <Routes>
+        <Route path="/" element={<Navigate to="/textUtils" />} />
           <Route path="/textUtils" element={
             <TextForm
               showAlert={showAlert}
